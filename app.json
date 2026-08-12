@@ -1,0 +1,93 @@
+{
+  "expo": {
+    "name": "Agon Preview",
+    "slug": "agon-preview",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "gooniversity",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#04010D"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.luzzi.gooniversity",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Gooniversity uses the camera so you can send photos in chats.",
+        "NSMicrophoneUsageDescription": "Gooniversity uses the microphone so you can send voice messages.",
+        "NSPhotoLibraryUsageDescription": "Gooniversity needs photos so you can share images and set a profile picture."
+      }
+    },
+    "android": {
+      "package": "com.luzzi.gooniversity",
+      "versionCode": 1,
+      "softwareKeyboardLayoutMode": "resize",
+      "adaptiveIcon": {
+        "backgroundColor": "#0A0618",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.VIBRATE",
+        "android.permission.POST_NOTIFICATIONS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "name": "GOONIVERSITY",
+      "shortName": "Gooniversity",
+      "themeColor": "#8B6CFF",
+      "backgroundColor": "#04010D",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Gooniversity uses your photos for avatars and chat media.",
+          "cameraPermission": "Gooniversity uses the camera so you can send photos."
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Gooniversity uses the microphone for voice messages."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "552f0665-e30d-4f11-9ea9-97bc22a22809"
+      },
+      "apiUrl": "",
+      "owner": "Luzzi"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/552f0665-e30d-4f11-9ea9-97bc22a22809"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "owner": "arcadalabs",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ]
+  }
+}
